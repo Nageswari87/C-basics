@@ -1,0 +1,20 @@
+#include<stdio.h>
+int main()
+{
+	char str[]="Hello world";
+	int s=sizeof(str)-1;
+	int l=0;
+	int k=3;
+	int r=s-1;
+	printf("%s",str);
+	while(l<r)
+	{
+		int temp=str[l];
+		str[l]=str[r];
+		str[r]=temp;
+		l++;
+		r--;
+	}
+	printf("\n%s ",str);
+	
+}
